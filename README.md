@@ -34,16 +34,18 @@ This repository contains my personal practice and learning notes for **Data Stru
 
 - To improve problem-solving skills.
 - To prepare for coding interviews.
-- To maintain a cd ~/Desktop/DSA   # or your actual folder
-nano README.md
-structured and version-controlled archive of solved problems.
+- To maintain a cd ~/Desktop/DSA # or your actual folder
+  nano README.md
+  structured and version-controlled archive of solved problems.
 
 ---
 
 ## 🧪 How to Run
+
 You can compile and run any file using:
 
 ### 🖥️ C++
 
 ```bash
 g++ filename.cpp -o output && ./output
+```
