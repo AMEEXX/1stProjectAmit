@@ -42,12 +42,12 @@ int lenghtofLL(node *head)
     return cnt;
 }
 
-node *delete_at(node *head, int k)
+node* delete_at(node *head, int k)
 {
     if (k > lenghtofLL(head))
     {
         cout << "cannot delete from k overflow" << endl;
-        return NULL;
+        return head;
     }
     if (head == NULL)
         return NULL;
@@ -63,7 +63,7 @@ node *delete_at(node *head, int k)
         int cnt = 2;
         node *temp = head;
 
-        while (cnt < k)
+        while (cnt != k)
         {
             temp = temp->next;
             cnt++;
@@ -79,15 +79,15 @@ int main()
     vector<int> arr = {23, 67, 46, 90, 36, 48};
     node* ans = Convert(arr);
 
-    // node* newhead = delete_at(ans,4);
-    // node* temp = newhead;
-    // for(int i = 0 ; i< lenghtofLL(newhead);i++){
-    //     cout<<temp->data<<endl;
-    //     temp = temp->next;
+    node* newhead = delete_at(ans,4);
+    node* temp = newhead;
+    for(int i = 0 ; i< lenghtofLL(newhead);i++){
+        cout<<temp->data<<endl;
+        temp = temp->next;
 
-    // }
-    int len = lenghtofLL(ans);
-    cout << len << endl;
-
+    }
+    // int len = lenghtofLL(ans);
+    // cout << len << endl;
+    
     return 0;
 }
