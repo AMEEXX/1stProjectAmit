@@ -40,7 +40,7 @@ int main()
     Node *ans = Convert(arr);
 
     Node *newans = delete_Node(ans);
-    ;
+    
     cout << newans->data << " ";
 
     return 0;
