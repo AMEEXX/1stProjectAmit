@@ -38,4 +38,11 @@
 *.out
 *.app
 
+a.out
+main
+program
+test
+build/
+bin/
+
 # End of https://www.toptal.com/developers/gitignore/api/c++
